@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Caesar Cipher App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1c1c1c;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    input, select, button {
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    .container {
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Caesar Cipher App</h1>
+
+    <label>Enter Text:</label><br>
+    <input type="text" id="textInput" placeholder="Your text here..." style="width: 100%;"><br>
+
+    <label>Shift Amount:</label><br>
+    <input type="number" id="shiftInput" value="0"><br>
+
+    <label>Action:</label><br>
+    <select id="actionSelect">
+      <option value="encode">Encrypt</option>
+      <option value="decode">Decrypt</option>
+    </select><br>
+
+    <button onclick="runCipher()">Run Cipher</button>
+
+    <h3 id="result">Result: </h3>
+  </div>
+
+  <script>
+    const alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+    function runCipher() {
+      const text = document.getElementById("textInput").value.toLowerCase();
+      let shift = parseInt(document.getElementById("shiftInput").value) % 26;
+      const action = document.getElementById("actionSelect").value;
+
+      if (action === "decode") shift *= -1;
+
+      let result = "";
+
+      for (let letter of text) {
+        if (alphabet.includes(letter)) {
+          let newIndex = (alphabet.indexOf(letter) + shift + 26) % 26;
+          result += alphabet[newIndex];
+        } else {
+          result += letter;
+        }
+      }
+
+      document.getElementById("result").innerText = "Result: " + result;
+    }
+  </script>
+</body>
+</html>
