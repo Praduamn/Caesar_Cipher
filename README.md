@@ -2,6 +2,9 @@
 
 This is a simple web-based tool for performing the **Caesar Cipher** encryption and decryption. It allows you to **encode** or **decode** text by shifting the letters of the alphabet by a given number.
 
+![image](https://github.com/user-attachments/assets/a99860fd-e61a-4aca-98ae-b47f28ff953c)
+
+
 ## Features
 - **Encrypt**: Shift the letters of your text to encode the message.
 - **Decrypt**: Shift the letters in reverse to decode the message.
