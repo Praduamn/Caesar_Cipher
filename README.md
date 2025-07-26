@@ -60,7 +60,7 @@ The app will run locally in your browser.
 
 This app is also hosted for free using GitHub Pages. You can access the live version of the app here:
 
-[https://CosMoxTheLegend.github.io/Caesar_Cipher](https://CosMoxTheLegend.github.io/Caesar_Cipher)
+[https://CosMoxTheLegend.github.io/Caesar_Cipher](https://praduamn.github.io/Caesar_Cipher/)
 
 
 ### How to Add This README:
