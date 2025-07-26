@@ -39,7 +39,7 @@ To use the web app locally, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/CosMoxTheLegend/Caesar_Cipher.git
+   git clone https://github.com/Praduamn/Caesar_Cipher.git
    ```
 
 2. Navigate to the project directory:
@@ -60,7 +60,7 @@ The app will run locally in your browser.
 
 This app is also hosted for free using GitHub Pages. You can access the live version of the app here:
 
-[https://CosMoxTheLegend.github.io/Caesar_Cipher](https://praduamn.github.io/Caesar_Cipher/)
+[https://Praduamn.github.io/Caesar_Cipher](https://praduamn.github.io/Caesar_Cipher/)
 
 
 ### How to Add This README:
